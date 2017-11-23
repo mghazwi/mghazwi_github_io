@@ -29,6 +29,7 @@ h1,h2,h3,h4,h5,h6,p,a,title {
 div.card:hover,
 div.card:focus,
 div.card.active {
+  background: lightblue;
   border-color: #337ab7;
 }
 .email_logo,
