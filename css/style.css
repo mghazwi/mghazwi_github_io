@@ -1,0 +1,66 @@
+/*
+$dark: #424652
+$light: #9a9da4
+$highlight: #8bc6db
+$border: #E9E9E9
+major color: #3c3f50
+*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6,p,a,title {
+  font-family: 'Roboto', sans-serif;
+}
+.profile_pic {
+  height: 150px;
+  display: block;
+  margin: 0 auto;
+}
+.info-title {
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+}
+.uni-logo {
+  height: 50px
+}
+div.thumbnail:hover,
+div.thumbnail:focus,
+div.thumbnail.active {
+  border-color: #337ab7;
+}
+.email_logo,
+.github_logo,
+.linkedin_logo,
+.insta_logo,
+.twitter_logo  {
+  height: 50px;
+  margin: 10px;
+}
+svg.email_logo:hover,
+svg.email_logo:focus,
+svg.email_logo:active {
+  fill: #db3236;
+}
+svg.github_logo:hover,
+svg.github_logo:focus,
+svg.github_logo:active {
+  fill: #767676;
+}
+svg.linkedin_logo:hover,
+svg.linkedin_logo:focus,
+svg.linkedin_logo:active {
+  fill: #007bb5;
+}
+svg.insta_logo:hover,
+svg.insta_logo:focus,
+svg.insta_logo:active {
+  fill: #cd486b;
+}
+svg.twitter_logo:hover,
+svg.twitter_logo:focus,
+svg.twitter_logo:active {
+  fill: #0084b4;
+}
