@@ -17,47 +17,57 @@
 
   </head>
   <body>
-    <!-- navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <!-- Brand -->
-      <a class="navbar-brand" href="/">M Alghazwi</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_menu" aria-controls="main_menu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-        <div class="collapse navbar-collapse" id="main_menu">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
-            <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
-            <li class="nav-item"><a class="nav-link" href="/projects">Projects</a></li>
-          </ul>
-        </div>
-    </nav>
+    <header>
+      <!-- navigation -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Brand -->
+        <a class="navbar-brand" href="/">M Alghazwi</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_menu" aria-controls="main_menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse" id="main_menu">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+              <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
+              <li class="nav-item"><a class="nav-link" href="/projects">Projects</a></li>
+            </ul>
+          </div>
+      </nav>
+
+    </header>
 
     <!-- content -->
 
     <div class="container">
       <div class="row">
-        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
-          <div class="thumbnail" id="blog1">
-            <a href="/blog/1"><img class="text-center" src="/img/sea01.jpg" alt="Seattle_picture" class="img-responsive"></a>
-            <h3 class="text-center">Seattle Experience</h3>
-            <p class="text-center">Soon to come</p>
+        <!-- blogs -->
+        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9" data-spy="scroll" data-target="#blogspy" data-offset="0">
+          <div class="card">
+            <img class="text-center card-img-top" src="/img/sea01.jpg" alt="Seattle_picture" class="img-responsive">
+            <div class="card-body">
+            <a href="/blog/1" id="blog1"><h3 class="text-center card-title">Seattle Experience</h3></a>
+            <p class="text-center card-text">Soon to come</p>
+            </div>
           </div>
-          <div class="thumbnail" id="blog2">
-            <a href="/blog/2"><img class="text-center"src="/img/ams02.jpg" alt="amstrdam_picture" class="img-responsive"></a>
-            <h3 class="text-center">The Netherland Experience</h3>
-            <p class="text-center">soon to come!</p>
-
+          <div class="card">
+            <img class="text-center card-img-top"src="/img/ams02.jpg" alt="amstrdam_picture" class="img-responsive">
+            <div class="card-body">
+              <a href="/blog/2" id="blog2"><h3 class="text-center card-title">The Netherland Experience</h3></a>
+              <p class="text-center card-text">soon to come!</p>
+            </div>
           </div>
         </div>
-        <nav class="col-lg-3 col-md-3 col-sm-3 col-xs-3" id="myScrollspy">
-          <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
-            <li><a href="#blog1" class="text-center">Blog 1</a></li>
-            <li><a href="#blog2" class="text-center">Blog 2</a></li>
-          </ul>
+        <!-- scrollspy -->
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+          <nav id="blogspy" class="navbar navbar-light bg-light">
+            <ul class="nav nav-pills">
+              <li class="nav-item"><a href="#blog1" class="text-center nav-link">@Blog1</a></li>
+              <li class="nav-item"><a href="#blog2" class="text-center nav-link">@Blog2</a></li>
+            </ul>
+          </nav>
+        </div>
 
-        </nav>
       </div>
 
     </div>
